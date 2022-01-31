@@ -5,13 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    <!-- icones Fontawesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS personnalisés -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" 
+    rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="logo">
-                <img src="./images/logo/Booki.png" alt="logo du site">
-            </a><!-- Fin a.logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./images/logo/Booki.png" width="120" height="65" alt="logo du site">
+                </a><!-- Fin a.logo-->
+            </div>
             <nav>
                 <ul>
                     <li><a href="#hebergements">Hébergements</a></li>
@@ -30,23 +47,23 @@
             </section><!-- Fin section.header -->
             <section class="recherche">
                 <form action="#">
-                    <div>
-                        <span>Icône</span>
+                    <div class="icone">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                        <input type="text" name="" id="" placeholder="Marseille, France">
+                        <input type="text" name="lieu" id="lieu" placeholder="Marseille, France">
                     </div>
                     <button type="submit">Rechercher</button>
                 </form><!-- Fin form -->
                 <div class="filter">
                     <p>Filtres</p>
-                    <div><span>dollar</span><button>Economique</button></div>
-                    <div><span>famille</span><button>Familial</button></div>
-                    <div><span>coeur</span><button>Romantique</button></div>
-                    <div><span>chien</span><button>Animaux autorisés</button></div>
+                    <div><button><i class="fas fa-money-bill-wave"></i>Economique</button></div>
+                    <div><button><i class="fas fa-child"></i>Familial</button></div>
+                    <div><button><i class="fas fa-heart"></i>Romantique</button></div>
+                    <div><button><i class="fas fa-dog"></i>Animaux autorisés</button></div>
                 </div><!-- Fin div.filter -->
                 <div class="infos">
-                    <span>information</span>
+                    <i class="fas fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div><!-- Fin div.infos -->
             </section><!-- Fin section.search -->
@@ -55,63 +72,75 @@
                     <h2>Hébergements à Marseille</h2>
                     <div class="heb-marseille-hotels">
                         <article class="heb-marseille-hotels-vignette">
-                            <img src="images/hebergements/4_small/auberge-cannebiere.jpg" alt="Auberge La Cannebière">
+                            <img src="images/hebergements/4_small/auberge-cannebiere.jpg" width="165" height="80" alt="Auberge La Cannebière">
                             <h3>Auberge La Cannebière</h3>
                             <p>Nuit à partir de 25€</p>
-                            <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                            <div class="stars">
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="gray-star fas fa-star"></i>
+                            </div>
                         </article>
-                        <article class="heb-marseille-hotels-vignette">
-                            <img src="images/hebergements/4_small/hotel-port.jpg" alt="Hôtel du Port">
+                        <article class="heb-marseille-hotels-vignette m20">
+                            <img src="images/hebergements/4_small/hotel-port.jpg" width="165" height="80" alt="Hôtel du Port">
                             <h3>Hôtel du Port</h3>
                             <p>Nuit à partir de 52€</p>
-                            <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                            <div class="stars">
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                            </div>
                         </article>
                         <article class="heb-marseille-hotels-vignette">
-                            <img src="images/hebergements/4_small/hotel-mouettes.jpg" alt="Hôtel les mouttes">
+                            <img src="images/hebergements/4_small/hotel-mouettes.jpg" width="165" height="80" alt="Hôtel les mouttes">
                             <h3>Hôtel les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
-                            <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
+                            <div class="stars">
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="gray-star fas fa-star"></i>
+                            </div>
                         </article>
                         <article class="heb-marseille-hotels-vignette">
-                            <img src="images/hebergements/4_small/hotel-de-la-mer.jpg" alt="Hôtel de la mer">
+                            <img src="images/hebergements/4_small/hotel-de-la-mer.jpg" width="165" height="80" alt="Hôtel de la mer">
                             <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de 46€</p>
                             <div class="stars">
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="gray-star fas fa-star"></i>
+                                <i class="gray-star fas fa-star"></i>
                             </div>
                         </article>
-                        <article class="heb-marseille-hotels-vignette">
-                            <img src="./images/hebergements/4_small/auberge-panier.jpg" alt="Auberge Le Panier">
+                        <article class="heb-marseille-hotels-vignette m20">
+                            <img src="./images/hebergements/4_small/auberge-panier.jpg" width="165" height="80" alt="Auberge Le Panier">
                             <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de 128€</p>
                             <div class="stars">
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="gray-star fas fa-star"></i>
                             </div>
                         </article>
                         <article class="heb-marseille-hotels-vignette">
-                            <img src="./images/hebergements/4_small/hotel-amina.jpg" alt="Hôtel chez Amina">
+                            <img src="./images/hebergements/4_small/hotel-amina.jpg" width="165" height="80" alt="Hôtel chez Amina">
                             <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
-                            <div class="stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-                        </article>
-                        <article class="heb-marseille-hotels-vignette">
-                            <img src="./images/hebergements/4_small/hotel-bleu-blanc.jpg" alt="Hôtel Tout bleu et Blanc">
-                            <h3>Hôtel Tout bleu et Blanc</h3>
-                            <p>Nuit à partir de 68€</p>
                             <div class="stars">
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
-                                <span class="star"></span>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
+                                <i class="blue-star fas fa-star"></i>
                             </div>
                         </article>
                     </div><!-- Fin div.heb-marseille-hotels -->
@@ -124,7 +153,7 @@
                     </div>
                     <article class="pop-hotels">
                         <div class="pop-hotels-vignette">
-                            <img src="./images/hebergements/4_small/hotel-soleil-matin.jpg" alt="Hôtel du soleil matin">
+                            <img src="./images/hebergements/4_small/hotel-soleil-matin.jpg" width="90" height="90" alt="Hôtel du soleil matin">
                             <div class="pop-hotels-vig-infos">
                                 <h3>Hôtel du soleil matin</h3>
                                 <p>Nuit à partir de 128€</p>
@@ -138,7 +167,7 @@
                             </div>
                         </div>
                         <div class="pop-hotels-vignette">
-                            <img src="./images/hebergements/4_small/au-coeur-de-leau.jpg" alt="Au coeur de l'eau Chambre d'hôtes">
+                            <img src="./images/hebergements/4_small/au-coeur-de-leau.jpg" width="90" height="90" alt="Au coeur de l'eau Chambre d'hôtes">
                             <div class="pop-hotels-vig-infos">
                                 <h3>Au coeur de l'eau Chambre d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
@@ -152,7 +181,7 @@
                             </div>
                         </div>
                         <div class="pop-hotels-vignette">
-                            <img src="./images/hebergements/4_small/hotel-bleu-blanc.jpg" alt="Hôtel Tout bleu et Blanc">
+                            <img src="./images/hebergements/4_small/hotel-bleu-blanc.jpg" width="90" height="90" alt="Hôtel Tout bleu et Blanc">
                             <div class="pop-hotels-vig-infos">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
